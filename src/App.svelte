@@ -1,6 +1,8 @@
 <script lang="ts">
-  import 'kemet-ui'
-  import 'kemet-ui/dist/styles/kemet.base.css'
+  import 'kemet-ui/styles/kemet.base.css'
+  import 'kemet-ui/elements/button'
+  import 'kemet-ui/elements/icon-bootstrap'
+  import 'kemet-ui/elements/drawer'
   import Counter from './lib/Counter.svelte'
 
   let isDrawerOpened: boolean = false;
@@ -18,7 +20,7 @@
     <div>
       <p>
         <button onclick={toggleDrawer}>
-          <kemet-icon icon="list" size={24}></kemet-icon>
+          <kemet-icon-bootstrap icon="list" size={24}></kemet-icon-bootstrap>
         </button>
       </p>
         <svg  fill="currentColor" viewBox="0 0 512 512" preserveAspectRatio="none">
